@@ -1,0 +1,11 @@
+{
+  "name": "gitpod-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/joilsonLeal/gitpod-test.git",
+  "author": "Joilson <joilson_rg@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.16.1"
+  }
+}
