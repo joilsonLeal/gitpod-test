@@ -1,3 +1,8 @@
 tasks:
-  - init: yarn install
-    command: node index.js 
+  - init: |
+      touch /tmp/.yarn-lock
+      yarn install
+      rm /tmp/.yarn-lock
+  
+  - init: sleep 1 && while [ -f /tml/.yarn-lock ]; do sleep 1; done
+    command: yarn dev
