@@ -12,4 +12,4 @@
 #    command: yarn dev
 
 image:
-  file: .gitpod.mysql.dockerfile
+  file: .gitpod.mongodb.dockerfile
