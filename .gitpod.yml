@@ -1,15 +1,15 @@
-ports:
-  - port: 3333
-    onOpen: open-browser
+#ports:
+#  - port: 3333
+#    onOpen: open-browser
 
-tasks:
-  - init: |
-      touch /tmp/.yarn-lock
-      yarn install
-      rm /tmp/.yarn-lock
- 
-  - init: sleep 1 && while [ -f /tmp/.yarn-lock ]; do sleep 1; done
-    command: yarn dev
+#tasks:
+#  - init: |
+#      touch /tmp/.yarn-lock
+#      yarn install
+#      rm /tmp/.yarn-lock
+# 
+#  - init: sleep 1 && while [ -f /tmp/.yarn-lock ]; do sleep 1; done
+#    command: yarn dev
 
 image:
-  file: .gitpod.dockerfile
+  file: .gitpod.mysql.dockerfile
